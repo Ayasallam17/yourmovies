@@ -1,0 +1,65 @@
+<app-nav></app-nav>
+<div class="col-md-4 col-12 m-2 p-2 border border-3" heigth=500px  >
+    <div *ngFor = 'let d of messages' class="row-md-2 m-2 p-2 border border-3">
+        {{d}}
+    </div>
+    <div class='row-md-1 m-2 p-2'> 
+        <button class="button" type="button" (click)="addmessage()">sent</button>
+        <input type="text" [(ngModel)]="message">
+    </div>
+</div>
+<header>
+    <div class="container">
+        <a href="#" class="logo">
+            <img src="">
+        </a>
+        <!-- <i class="fab fa-accessible-icon" aria-hidden="true"></i>
+        <i class="fa fa-american-sign-language-interpreting fa-5x" aria-hidden="true"> </i> -->
+        <!-- <i class="fa fa-address-book" aria-hidden="true"></i>
+        <i class="fa fa-acorn" aria-hidden="true"></i> -->
+        <nav>
+            <ul>
+                <li><a href="#">home</a></li>  
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+                <li><a href="#">home</a></li>
+            </ul>
+        </nav>
+        <div class="form">
+            <i class="fa fa-search"  aria-hidden="true"></i>
+        </div>
+        
+        
+    </div>
+</header>
+<!-- <div class="row d-flex justifuy-content-center" > 
+    <input type="text" [(ngModel)]="message">
+    <button class="button" type="button" (click)="addmessage()">add</button>
+    <button (click)="showchat()">show</button>
+     <input [(ngModel)]="messages" disabled='true'> 
+
+</div> -->
+<!-- <button (click)= showFav() >show fav</button>
+<button (click)= "createList()" >create list</button>
+<button (click)= "getList()" >get list</button>
+<div *ngFor="let d of data">
+    {{ d }}
+</div> -->
+<!--  <div  *ngFor="let d of data"  >
+<img src="{{ imgUrl }}{{ d.poster_path }} "> 
+<button (click) = "addFavMovie(d.id)"  >fav</button>
+</div> -->
+<!-- <section class="container">
+    <div class="row d-flex justifuy-content-center">
+        <div class="col-md-3 col-12 m-2 p-2 border border-3" 
+        *ngFor="let d of data">
+        <img src="{{ imgUrl }}{{ d.poster_path }} "> 
+        </div>
+    </div>
+    <pagination [totalItems]="contentArray.length" 
+    (pageChanged)="pageChanged($event)" [itemsPerPage]="items"
+    ></pagination>
+
+</section>
+
+  -->
